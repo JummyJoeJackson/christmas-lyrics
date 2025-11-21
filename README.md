@@ -1,5 +1,5 @@
 # Christmas Lyrics 🎄
-### Christmas Song lyrics Visualizer that runs in the python console.
+##### A short python script that visualizes christmas songs locally in your terminal. No imports necessary.
 
 ## Setup
 
