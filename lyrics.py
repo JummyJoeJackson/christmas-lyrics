@@ -5,8 +5,7 @@ from colorama import Fore
 
 
 def print_tree():
-    tree = ["",
-            "       *         ",
+    tree = ["\n       *         ",
             "      ***        ",
             "     *****       ",
             "    *******      ",
