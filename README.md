@@ -1,4 +1,4 @@
-# X-mas Lyrics 🎄
+# Christmas Lyrics 🎄
 ### Christmas Song lyrics Visualizer that runs in the python console.
 
 ## Setup
