@@ -1,21 +1,22 @@
 from colorama import Fore
 
-print(Fore.GREEN + "Merry Christmas!")
 
-
-tree = ["       *       ",
-        "      ***      ",
-        "     *****     ",
-        "    *******    ",
-        "   *********   ",
-        "  ***********  ",
-        " ************* ",
-        "***************",
-        "       ||      ",
-        "      /||\\     "]
-
+# kinda self-explanatory
 def print_tree():
+    tree = ["       *       ",
+            "      ***      ",
+            "     *****     ",
+            "    *******    ",
+            "   *********   ",
+            "  ***********  ",
+            " ************* ",
+            "***************",
+            "       ||      ",
+            "      /||\\     "]
+
     for row in tree:
         print(row)
 
+
+print(Fore.GREEN + "Merry Christmas!\n")
 print_tree()
