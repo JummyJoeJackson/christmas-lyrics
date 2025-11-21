@@ -1,9 +1,12 @@
+import os
+import random
+import time
 from colorama import Fore
 
 
-# kinda self-explanatory
 def print_tree():
-    tree = ["       *       ",
+    tree = ["               ",
+            "       *       ",
             "      ***      ",
             "     *****     ",
             "    *******    ",
@@ -11,19 +14,22 @@ def print_tree():
             "  ***********  ",
             " ************* ",
             "***************",
-            "       ||      ",
-            "      /||\\     "]
+            "      |||      ",
+            "     /|||\\     "]
+    colors = [Fore.RED, Fore.GREEN, Fore.GREEN, Fore.GREEN, Fore.BLUE, Fore.YELLOW, Fore.MAGENTA]
+    for row in tree:
+        for char in row:
+            if char == "*":
+                color = random.choice(colors)
+                print(color + char, end="", flush=True)
+            else:
+                print(char, end="", flush=True)
+                print(Fore.LIGHTBLACK_EX, end="", flush=True)
+        print("")
 
-    for i in range(len(tree)):
-        if i % 2 == 0:
-            print(Fore.RED + tree[i], flush=True)
-        else:
-            print(Fore.GREEN + tree[i], flush=True)
 
-
-print(Fore.GREEN + "Merry Christmas!\n", flush=True)
-print_tree()
-
-# loading . . . function'
-def loading():
-    print(".", flush=True)
+if __name__ == "__main__":
+    while True:
+        print_tree()
+        time.sleep(0.2)
+        os.system("cls" if os.name == "nt" else "clear")
