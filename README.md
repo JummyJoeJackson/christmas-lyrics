@@ -16,8 +16,3 @@ python lyrics.py
 ```
 
 You should see the dazzling christmas tree changing colors in your console!
-
-To stop the program, hold down:
-```shell
-Ctrl + C
-```
