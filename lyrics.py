@@ -16,9 +16,10 @@ def print_tree():
             "      |||        ",
             "     /|||\\       "]
 
-    colors = [Fore.RED, Fore.GREEN, Fore.GREEN, Fore.GREEN, Fore.BLUE, Fore.YELLOW, Fore.MAGENTA]
+    colors = [Fore.RED, Fore.GREEN, Fore.BLUE, Fore.YELLOW, Fore.MAGENTA, Fore.GREEN, Fore.GREEN]
 
-    for row in tree:
+    print(colors[3] + tree[0])
+    for row in tree[1:]:
         for char in row:
             if char == "*":
                 color = random.choice(colors)
