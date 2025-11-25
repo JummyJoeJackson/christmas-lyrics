@@ -12,7 +12,7 @@ cd christmas-lyrics
 
 After cloning the repo, run:
 ```shell
-python lyrics.py
+python song.py
 ```
 
 You should see the dazzling christmas tree changing colors in your console!
