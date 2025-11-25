@@ -2,8 +2,7 @@ import os
 import random
 import time
 from colorama import Fore, Style
-from lyrics import TREE, COLORS
-from lyrics import print_tree
+from tree import TREE, COLORS, print_tree
 
 LYRICS = """
 Jingle bells, jingle bells,
