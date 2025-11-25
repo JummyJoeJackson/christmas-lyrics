@@ -41,7 +41,7 @@ def main():
             time.sleep(0.1)
             
     except KeyboardInterrupt:
-        print("\n\nMerry Christmas!")
+        print("\nMerry Christmas!")
 
 if __name__ == "__main__":
     main()
