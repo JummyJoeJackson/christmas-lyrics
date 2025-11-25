@@ -12,6 +12,7 @@ cd christmas-lyrics
 
 After cloning the repo, run:
 ```shell
+pip install -r requirements.txt
 python song.py
 ```
 
