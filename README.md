@@ -21,3 +21,5 @@ To stop the program, hold down:
 ```shell
 Ctrl + C
 ```
+
+---
