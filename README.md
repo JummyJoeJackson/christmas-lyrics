@@ -15,11 +15,16 @@ After cloning the repo, run:
 python song.py
 ```
 
-You should see the dazzling christmas tree changing colors in your console!
+You should see the dazzling christmas tree changing colors in your console! The lyrics to Jingle Bells will appear below the tree.
 
 To stop the program, hold down:
 ```shell
 Ctrl + C
 ```
 
+## Next Steps
+
+- Add functionality for importing custom lyrics
+- Time lyrics with the song, using line breaks and bpm as a guide
+- Play the chosen song
 ---
