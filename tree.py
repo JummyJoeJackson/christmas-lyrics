@@ -27,10 +27,3 @@ def print_tree():
             else:
                 print(Fore.WHITE + char, end="", flush=True)
         print("")
-
-
-if __name__ == "__main__":
-    while True:
-        print_tree()
-        time.sleep(0.2)
-        os.system("cls" if os.name == "nt" else "clear")

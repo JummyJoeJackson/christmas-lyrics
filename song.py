@@ -1,7 +1,7 @@
 import os
 import random
 import time
-from colorama import Fore, Style
+from colorama import Fore
 from tree import TREE, COLORS, print_tree
 
 LYRICS = """
@@ -24,10 +24,8 @@ def main():
     
     try:
         while True:
-            os.system("cls" if os.name == "nt" else "clear")
             # Print the animated tree
             print_tree()
-            print(Style.RESET_ALL)
 
             # Print the lyrics generated so far
             print("\n" + current_text)
@@ -39,6 +37,9 @@ def main():
             
             # Control the speed of animation and typing
             time.sleep(0.1)
+
+            # Clear the screen
+            os.system("cls" if os.name == "nt" else "clear")
             
     except KeyboardInterrupt:
         print("\nMerry Christmas!")
