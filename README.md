@@ -3,7 +3,7 @@
 
 ## Setup
 
-Start by cloning this repository:
+Assuming you already have python downloaded, start by cloning this repository:
 
 ```shell
 git clone https://github.com/JummyJoeJackson/JummyJoeJackson/christmas-lyrics
