@@ -1,9 +1,7 @@
 import os
-import random
 import time
 from pygame import mixer, error
-from colorama import Fore
-from tree import TREE, COLORS, print_tree
+from tree import print_tree
 
 JINGLE_BELLS = """
 Dashing through the snow,
