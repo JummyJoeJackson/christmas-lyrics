@@ -27,5 +27,4 @@ Ctrl + C
 
 - Add functionality for importing custom lyrics
 - Time lyrics with the song, using line breaks and bpm as a guide
-- Play the chosen song
 ---
