@@ -26,32 +26,41 @@ In a one-horse open sleigh.
 """
 
 LAST_CHRISTMAS = """
-beat  beat  beat beat  beat  beat  beat beat
-beat  beat  beat beat  beat  beat  beat beat                      
-Ah-huh, ooh, oooooh, aah, aaahhhhh,
-🥁  🥁  🥁   🥁 🥁  🥁 🥁
-Last Christmas I gave you my heart,
-But the very next day, you gave it away.       
-This year, to save me from tears,     
-I'll give it to someone special.
-🥁 🥁 🥁  🥁 🥁 🥁
-Last Christmas I gave you my heart,  
-But the very next day, you gave it away (you gave it away).
-This year, to save me from tears,     
-I'll give it to someone special (special).
+🥁    🥁    🥁    🥁    🥁    🥁    🥁    🥁  
+   🥁    🥁    🥁    🥁    🥁    🥁    🥁
+Ah-huh, oooooh, ooooohhhhhhhhhhh, aaaaah, aaahhhhhhhhhhh,                   
+🥁  🥁  🥁  🥁🥁  🥁🥁
+Last Christmas I gave you my 💕,
+But the very next day, you gave it away       
+This year, to save me from tears, 
+I'll give it to someone 𝓼𝓹𝓮𝓬𝓲𝓪𝓵
+🥁 🥁🥁  🥁  🥁🥁 🥁🥁
+Last Christmas I gave you my 💕,
+But the very next day, you gave it away (gave it away)
+This year, to save me from tears,
+I'll give it to someone 𝓼𝓹𝓮𝓬𝓲𝓪𝓵 (𝓼𝓹𝓮𝓬𝓲𝓪𝓵)
 """
 
-def main():
-    choice = input("What song do you want to play? (Last_Christmas, Jingle_Bells): ").lower()
+SONGS = {
+    "1": LAST_CHRISTMAS,
+    "2": JINGLE_BELLS,
+}
 
-    if choice == "last_christmas":
-        LYRICS = LAST_CHRISTMAS
-        song_path = os.path.join("songs", "last_christmas.mp3")
-    elif choice == "jingle_bells":
-        LYRICS = JINGLE_BELLS
-        song_path = os.path.join("songs", "jingle_bells.mp3")
+SONG_NAMES = {
+    "1": "last_christmas",
+    "2": "jingle_bells",
+}
+
+def main():
+    choice = input("What song do you want to play? (1, 2): ")
+
+    if choice in SONG_NAMES:
+        LYRICS = SONGS[choice]
+        song_path = os.path.join("songs", f"{SONG_NAMES[choice]}.mp3")
     else:
-        print("Invalid choice. Defaulting to Jingle Bells.")
+        print("Invalid choice. Defaulting to Last Christmas.")
+        LYRICS = SONGS["1"]
+        song_path = os.path.join("songs", f"{SONG_NAMES["1"]}.mp3")
 
     # Initialize pygame mixer and play music
     mixer.init()
