@@ -26,11 +26,11 @@ In a one-horse open sleigh.
 LAST_CHRISTMAS = """
 🥁    🥁    🥁    🥁    🥁    🥁    🥁    🥁  
    🥁    🥁    🥁    🥁    🥁    🥁    🥁
-Ah-huh, oooooh, ooooohhhhhhhhhhh, aaaaah, aaahhhhhhhhhhh,                   
+Ah-huh, oooooh, ooooohhhhhhhhhhh, aaaaah, aaahhhhhhhhhhh,           
 🥁  🥁  🥁  🥁🥁  🥁🥁
 Last Christmas I gave you my 💕,
 But the very next day, you gave it away       
-This year, to save me from tears, 
+This year, to save me from tears,
 I'll give it to someone 𝓼𝓹𝓮𝓬𝓲𝓪𝓵
 🥁 🥁🥁  🥁  🥁🥁 🥁🥁
 Last Christmas I gave you my 💕,
@@ -75,7 +75,13 @@ def main():
     full_text = LYRICS.strip()
     
     try:
+        # Clear screen once initially
+        os.system("cls" if os.name == "nt" else "clear")
+        
         while True:
+            # Move cursor to top-left
+            print("\033[H", end="")
+            
             # Print the animated tree
             print_tree()
 
@@ -88,10 +94,8 @@ def main():
                 char_index += 1
             
             # Control the speed of animation and typing
-            time.sleep(0.075)
+            time.sleep(0.11)
 
-            # Clear the screen
-            os.system("cls" if os.name == "nt" else "clear")
             
     except KeyboardInterrupt:
         print("\nMerry Christmas!")
