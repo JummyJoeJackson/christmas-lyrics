@@ -4,23 +4,26 @@ from pygame import mixer, error
 from tree import print_tree
 
 JINGLE_BELLS = """
-Dashing through the snow,
-In a one-horse open sleigh,
+🔔  🔔  🔔    🔔  🔔  🔔    🔔  🔔  🔔  🔔 🔔      
+🎺  🎺  🎺    🎺  🎺  🎺  🎺🎺 🎺 🎺 🎺 🎺🎺
+Dashing through the ❄️,
+In a one-🐎 open 🛷,
 Over the fields we go,
-Laughing all the way.
-Bells on bobtails ring,
-Making spirits bright,
-What fun it is to ride and sing
-A sleighing song tonight. Oh!
-Jingle bells, jingle bells,
-Jingle all the way.
-Oh! what fun it is to ride
-In a one-horse open sleigh.
-Hey!
-Jingle bells, jingle bells,
-Jingle all the way;
-Oh! what fun it is to ride
-In a one-horse open sleigh.
+Laughing all the way
+🔔 on bobtails ring,
+Making 👻 bright,
+What fun it is to ride & sing
+A 🛷ing song tonight
+
+Jingle 🔔, Jingle 🔔,
+Jingle all the way
+Oh what fun it is to ride
+In a one-🐎 open 🛷
+
+Jingle 🔔, Jingle 🔔,
+Jingle all the way
+Oh what fun it is to ride
+In a one-🐎 open 🛷
 """
 
 LAST_CHRISTMAS = """
