@@ -26,5 +26,5 @@ Ctrl + C
 ## Next Steps
 
 - Add functionality for importing custom lyrics
-- Time lyrics with the song, using line breaks and bpm as a guide
+- Add more christmas songs
 ---
