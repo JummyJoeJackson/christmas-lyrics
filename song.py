@@ -3,6 +3,7 @@ import time
 from pygame import mixer, error
 from tree import print_tree
 
+
 JINGLE_BELLS = """
 🔔  🔔  🔔    🔔  🔔  🔔    🔔  🔔  🔔  🔔 🔔      
 🎺  🎺  🎺    🎺  🎺  🎺  🎺🎺 🎺 🎺 🎺 🎺🎺
@@ -52,6 +53,7 @@ SONG_NAMES = {
     "2": "jingle_bells",
 }
 
+
 def main():
     choice = input("What song do you want to play? (1, 2): ")
 
@@ -99,9 +101,9 @@ def main():
             # Control the speed of animation and typing
             time.sleep(0.11)
 
-            
     except KeyboardInterrupt:
         print("\nMerry Christmas!")
+
 
 if __name__ == "__main__":
     main()
