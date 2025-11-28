@@ -1,7 +1,8 @@
 import os
+import shutil
 import time
 from pygame import mixer, error
-from tree import print_tree
+from tree import print_tree, COLUMNS
 
 
 JINGLE_BELLS = """
@@ -15,12 +16,10 @@ Laughing all the way
 Making 👻 bright,
 What fun it is to ride & sing
 A 🛷ing song tonight
-
 Jingle 🔔, Jingle 🔔,
 Jingle all the way
 Oh what fun it is to ride
 In a one-🐎 open 🛷
-
 Jingle 🔔, Jingle 🔔,
 Jingle all the way
 Oh what fun it is to ride
@@ -29,13 +28,13 @@ In a one-🐎 open 🛷
 
 LAST_CHRISTMAS = """
 🥁    🥁    🥁    🥁    🥁    🥁    🥁    🥁  
-   🥁    🥁    🥁    🥁    🥁    🥁    🥁
-Ah-huh, oooooh, ooooohhhhhhhhhhh, aaaaah, aaahhhhhhhhhhh,           
+ 🥁    🥁    🥁    🥁    🥁    🥁    🥁  
+      Ah-huh, oooooh, ooooohhhhhhhhhhh, aaaaah, aaahhhhhhhhhhh,      \n
 🥁  🥁  🥁  🥁🥁  🥁🥁
 Last Christmas I gave you my 💕,
-But the very next day, you gave it away       
+   But the very next day, you gave it away   
 This year, to save me from tears,
-I'll give it to someone 𝓼𝓹𝓮𝓬𝓲𝓪𝓵
+I'll give it to someone 𝓼𝓹𝓮𝓬𝓲𝓪𝓵\n
 🥁 🥁🥁  🥁  🥁🥁 🥁🥁
 Last Christmas I gave you my 💕,
 But the very next day, you gave it away (gave it away)
@@ -91,7 +90,10 @@ def main():
             print_tree()
 
             # Print the lyrics generated so far
-            print("\n" + current_text)
+            centered_text = ""
+            for line in current_text.split('\n'):
+                centered_text += line.center(COLUMNS) + "\n"
+            print("\n" + centered_text)
             
             # Update the lyrics
             if char_index < len(full_text):

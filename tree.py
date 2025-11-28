@@ -1,19 +1,22 @@
 import random
-from colorama import Fore, init
+import shutil
+from colorama import Fore
 
 
-TREE = ["\n       *         ",
-        "      ***        ",
-        "     *****       ",
-        "    *******      ",
-        "   *********     ",
-        "  ***********    ",
-        " *************   ",
-        "***************  ",
-        "      |||        ",
-        "     /|||\\       "]
+TREE = ["\n       *       ",
+        "      ***      ",
+        "     *****     ",
+        "    *******    ",
+        "   *********   ",
+        "  ***********  ",
+        " ************* ",
+        "***************",
+        "      |||      ",
+        "     /|||\\     "]
 
 COLORS = [Fore.RED, Fore.GREEN, Fore.BLUE, Fore.YELLOW, Fore.MAGENTA, Fore.GREEN, Fore.GREEN]
+
+COLUMNS = shutil.get_terminal_size().columns
 
 
 def get_tree_string():
@@ -29,5 +32,12 @@ def get_tree_string():
     return tree_str
 
 def print_tree():
-    print(get_tree_string(), end="")
-
+    padding = max(0, (COLUMNS - 15) // 2)
+    pad_str = " " * padding
+    
+    final_str = ""
+    for line in get_tree_string().split('\n'):
+        #if line: 
+        final_str += pad_str + line + "\n"
+    
+    print(final_str, end="")
