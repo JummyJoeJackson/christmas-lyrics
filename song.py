@@ -32,7 +32,7 @@ LAST_CHRISTMAS = """
       Ah-huh, oooooh, ooooohhhhhhhhhhh, aaaaah, aaahhhhhhhhhhh,      \n
 🥁  🥁  🥁  🥁🥁  🥁🥁
 Last Christmas I gave you my 💕,
-   But the very next day, you gave it away   
+ But the very next day, you gave it away 
 This year, to save me from tears,
 I'll give it to someone 𝓼𝓹𝓮𝓬𝓲𝓪𝓵\n
 🥁 🥁🥁  🥁  🥁🥁 🥁🥁
